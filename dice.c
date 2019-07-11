@@ -5,8 +5,13 @@
 int main(){
 
   int D1,D2;
+  char name[100];
    
   srand((int)time(NULL));
+  
+  printf("What is your name?\n > ");
+  scanf("%s",name);
+  printf("Hello, %s!\n",name);
   
   D1 = rand()%6+1;
   for(int i = 0; i < 100; i++){
